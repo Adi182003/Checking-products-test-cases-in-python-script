@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">benchmark_report.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">benchmark_report.html</h1>
+    <p>Report generated on 04-Aug-2025 at 14:32:26 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">1 test took 00:00:01.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" disabled/>
+            <span class="failed">0 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">1 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" />
+            <span class="skipped">104 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.3&#34;, &#34;Platform&#34;: &#34;Windows-11-10.0.26100-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.4.1&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;benchmark&#34;: &#34;5.1.0&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;json-report&#34;: &#34;1.5.0&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}}, &#34;tests&#34;: {&#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data0-item_info_data0-expected0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data0-item_info_data0-expected0]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data0-item_info_data0-expected0]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data1-item_info_data1-expected1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data1-item_info_data1-expected1]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data1-item_info_data1-expected1]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data2-item_info_data2-expected2]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data2-item_info_data2-expected2]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data2-item_info_data2-expected2]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data3-item_info_data3-expected3]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data3-item_info_data3-expected3]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data3-item_info_data3-expected3]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data4-item_info_data4-expected4]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data4-item_info_data4-expected4]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data4-item_info_data4-expected4]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data5-item_info_data5-expected5]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data5-item_info_data5-expected5]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data5-item_info_data5-expected5]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data6-item_info_data6-expected6]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data6-item_info_data6-expected6]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data6-item_info_data6-expected6]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data7-item_info_data7-expected7]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data7-item_info_data7-expected7]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data7-item_info_data7-expected7]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data8-item_info_data8-expected8]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data8-item_info_data8-expected8]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data8-item_info_data8-expected8]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data9-item_info_data9-expected9]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data9-item_info_data9-expected9]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data9-item_info_data9-expected9]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data10-item_info_data10-expected10]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data10-item_info_data10-expected10]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data10-item_info_data10-expected10]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data11-item_info_data11-expected11]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data11-item_info_data11-expected11]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data11-item_info_data11-expected11]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data12-item_info_data12-expected12]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data12-item_info_data12-expected12]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data12-item_info_data12-expected12]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data13-item_info_data13-expected13]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data13-item_info_data13-expected13]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data13-item_info_data13-expected13]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data14-item_info_data14-expected14]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data14-item_info_data14-expected14]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data14-item_info_data14-expected14]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data15-item_info_data15-expected15]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data15-item_info_data15-expected15]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data15-item_info_data15-expected15]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data16-item_info_data16-expected16]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data16-item_info_data16-expected16]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data16-item_info_data16-expected16]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data17-item_info_data17-expected17]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data17-item_info_data17-expected17]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data17-item_info_data17-expected17]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data18-item_info_data18-expected18]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data18-item_info_data18-expected18]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data18-item_info_data18-expected18]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data19-item_info_data19-expected19]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data19-item_info_data19-expected19]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data19-item_info_data19-expected19]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data20-item_info_data20-expected20]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data20-item_info_data20-expected20]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data20-item_info_data20-expected20]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data21-item_info_data21-expected21]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data21-item_info_data21-expected21]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data21-item_info_data21-expected21]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data22-item_info_data22-expected22]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data22-item_info_data22-expected22]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data22-item_info_data22-expected22]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data23-item_info_data23-expected23]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data23-item_info_data23-expected23]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data23-item_info_data23-expected23]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data24-item_info_data24-expected24]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data24-item_info_data24-expected24]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data24-item_info_data24-expected24]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data25-item_info_data25-expected25]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data25-item_info_data25-expected25]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data25-item_info_data25-expected25]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data26-item_info_data26-expected26]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data26-item_info_data26-expected26]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data26-item_info_data26-expected26]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data27-item_info_data27-expected27]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data27-item_info_data27-expected27]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data27-item_info_data27-expected27]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data28-item_info_data28-expected28]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data28-item_info_data28-expected28]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data28-item_info_data28-expected28]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data29-item_info_data29-expected29]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data29-item_info_data29-expected29]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data29-item_info_data29-expected29]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data30-item_info_data30-expected30]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data30-item_info_data30-expected30]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data30-item_info_data30-expected30]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data31-item_info_data31-expected31]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data31-item_info_data31-expected31]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data31-item_info_data31-expected31]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data32-item_info_data32-expected32]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data32-item_info_data32-expected32]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data32-item_info_data32-expected32]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data33-item_info_data33-expected33]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data33-item_info_data33-expected33]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data33-item_info_data33-expected33]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data34-item_info_data34-expected34]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data34-item_info_data34-expected34]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data34-item_info_data34-expected34]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data35-item_info_data35-expected35]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data35-item_info_data35-expected35]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data35-item_info_data35-expected35]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data36-item_info_data36-expected36]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data36-item_info_data36-expected36]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data36-item_info_data36-expected36]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data37-item_info_data37-expected37]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data37-item_info_data37-expected37]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data37-item_info_data37-expected37]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data38-item_info_data38-expected38]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data38-item_info_data38-expected38]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data38-item_info_data38-expected38]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data39-item_info_data39-expected39]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data39-item_info_data39-expected39]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data39-item_info_data39-expected39]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data40-item_info_data40-expected40]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data40-item_info_data40-expected40]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data40-item_info_data40-expected40]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data41-item_info_data41-expected41]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data41-item_info_data41-expected41]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data41-item_info_data41-expected41]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data42-item_info_data42-expected42]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data42-item_info_data42-expected42]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data42-item_info_data42-expected42]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data43-item_info_data43-expected43]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data43-item_info_data43-expected43]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data43-item_info_data43-expected43]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data44-item_info_data44-expected44]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data44-item_info_data44-expected44]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data44-item_info_data44-expected44]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data45-item_info_data45-expected45]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data45-item_info_data45-expected45]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data45-item_info_data45-expected45]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data46-item_info_data46-expected46]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data46-item_info_data46-expected46]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data46-item_info_data46-expected46]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data47-item_info_data47-expected47]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data47-item_info_data47-expected47]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data47-item_info_data47-expected47]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data48-item_info_data48-expected48]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data48-item_info_data48-expected48]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data48-item_info_data48-expected48]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data49-item_info_data49-expected49]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data49-item_info_data49-expected49]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data49-item_info_data49-expected49]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data50-item_info_data50-expected50]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data50-item_info_data50-expected50]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data50-item_info_data50-expected50]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data51-item_info_data51-expected51]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data51-item_info_data51-expected51]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data51-item_info_data51-expected51]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data52-item_info_data52-expected52]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data52-item_info_data52-expected52]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data52-item_info_data52-expected52]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data53-item_info_data53-expected53]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data53-item_info_data53-expected53]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data53-item_info_data53-expected53]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data54-item_info_data54-expected54]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data54-item_info_data54-expected54]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data54-item_info_data54-expected54]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data55-item_info_data55-expected55]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data55-item_info_data55-expected55]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data55-item_info_data55-expected55]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data56-item_info_data56-expected56]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data56-item_info_data56-expected56]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data56-item_info_data56-expected56]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data57-item_info_data57-expected57]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data57-item_info_data57-expected57]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data57-item_info_data57-expected57]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data58-item_info_data58-expected58]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data58-item_info_data58-expected58]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data58-item_info_data58-expected58]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data59-item_info_data59-expected59]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data59-item_info_data59-expected59]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data59-item_info_data59-expected59]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data60-item_info_data60-expected60]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data60-item_info_data60-expected60]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data60-item_info_data60-expected60]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data61-item_info_data61-expected61]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data61-item_info_data61-expected61]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data61-item_info_data61-expected61]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data62-item_info_data62-expected62]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data62-item_info_data62-expected62]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data62-item_info_data62-expected62]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data63-item_info_data63-expected63]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data63-item_info_data63-expected63]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data63-item_info_data63-expected63]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data64-item_info_data64-expected64]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data64-item_info_data64-expected64]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data64-item_info_data64-expected64]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data65-item_info_data65-expected65]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data65-item_info_data65-expected65]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data65-item_info_data65-expected65]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data66-item_info_data66-expected66]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data66-item_info_data66-expected66]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data66-item_info_data66-expected66]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data67-item_info_data67-expected67]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data67-item_info_data67-expected67]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data67-item_info_data67-expected67]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data68-item_info_data68-expected68]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data68-item_info_data68-expected68]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data68-item_info_data68-expected68]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data69-item_info_data69-expected69]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data69-item_info_data69-expected69]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data69-item_info_data69-expected69]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data70-item_info_data70-expected70]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data70-item_info_data70-expected70]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data70-item_info_data70-expected70]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data71-item_info_data71-expected71]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data71-item_info_data71-expected71]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data71-item_info_data71-expected71]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data72-item_info_data72-expected72]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data72-item_info_data72-expected72]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data72-item_info_data72-expected72]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data73-item_info_data73-expected73]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data73-item_info_data73-expected73]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data73-item_info_data73-expected73]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data74-item_info_data74-expected74]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data74-item_info_data74-expected74]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data74-item_info_data74-expected74]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data75-item_info_data75-expected75]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data75-item_info_data75-expected75]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data75-item_info_data75-expected75]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data76-item_info_data76-expected76]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data76-item_info_data76-expected76]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data76-item_info_data76-expected76]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data77-item_info_data77-expected77]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data77-item_info_data77-expected77]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data77-item_info_data77-expected77]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data78-item_info_data78-expected78]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data78-item_info_data78-expected78]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data78-item_info_data78-expected78]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data79-item_info_data79-expected79]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data79-item_info_data79-expected79]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data79-item_info_data79-expected79]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data80-item_info_data80-expected80]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data80-item_info_data80-expected80]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data80-item_info_data80-expected80]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data81-item_info_data81-expected81]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data81-item_info_data81-expected81]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data81-item_info_data81-expected81]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data82-item_info_data82-expected82]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data82-item_info_data82-expected82]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data82-item_info_data82-expected82]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data83-item_info_data83-expected83]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data83-item_info_data83-expected83]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data83-item_info_data83-expected83]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data84-item_info_data84-expected84]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data84-item_info_data84-expected84]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data84-item_info_data84-expected84]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data85-item_info_data85-expected85]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data85-item_info_data85-expected85]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data85-item_info_data85-expected85]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data86-item_info_data86-expected86]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data86-item_info_data86-expected86]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data86-item_info_data86-expected86]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data87-item_info_data87-expected87]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data87-item_info_data87-expected87]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data87-item_info_data87-expected87]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data88-item_info_data88-expected88]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data88-item_info_data88-expected88]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data88-item_info_data88-expected88]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data89-item_info_data89-expected89]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data89-item_info_data89-expected89]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data89-item_info_data89-expected89]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data90-item_info_data90-expected90]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data90-item_info_data90-expected90]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data90-item_info_data90-expected90]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data91-item_info_data91-expected91]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data91-item_info_data91-expected91]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data91-item_info_data91-expected91]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data92-item_info_data92-expected92]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data92-item_info_data92-expected92]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data92-item_info_data92-expected92]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data93-item_info_data93-expected93]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data93-item_info_data93-expected93]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data93-item_info_data93-expected93]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data94-item_info_data94-expected94]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data94-item_info_data94-expected94]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data94-item_info_data94-expected94]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data95-item_info_data95-expected95]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data95-item_info_data95-expected95]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data95-item_info_data95-expected95]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data96-item_info_data96-expected96]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data96-item_info_data96-expected96]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data96-item_info_data96-expected96]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data97-item_info_data97-expected97]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data97-item_info_data97-expected97]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data97-item_info_data97-expected97]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data98-item_info_data98-expected98]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data98-item_info_data98-expected98]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data98-item_info_data98-expected98]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data99-item_info_data99-expected99]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data99-item_info_data99-expected99]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data99-item_info_data99-expected99]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data100-item_info_data100-expected100]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data100-item_info_data100-expected100]::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data100-item_info_data100-expected100]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data101-item_info_data101-expected101]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data101-item_info_data101-expected101]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data101-item_info_data101-expected101]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data102-item_info_data102-expected102]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data102-item_info_data102-expected102]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data102-item_info_data102-expected102]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data103-item_info_data103-expected103]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_get_top_5_products_from_data[transaction_data103-item_info_data103-expected103]::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_get_top_5_products_from_data[transaction_data103-item_info_data103-expected103]::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;(&amp;quot;C:\\\\Users\\\\m515da\\\\Desktop\\\\company project\\\\today&amp;#x27;s task\\\\test_top_products.py&amp;quot;, 57, &amp;#x27;Skipped: Skipping non-benchmark (--benchmark-only active).&amp;#x27;)\n&#34;}], &#34;test_top_products.py::test_benchmark_top_5&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_top_products.py::test_benchmark_top_5&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_top_products.py::test_benchmark_top_5&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;benchmark_report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>

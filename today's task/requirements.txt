@@ -1,0 +1,5 @@
+openpyxl
+pytest
+pytest-html
+pytest-json-report
+pytest-benchmark
